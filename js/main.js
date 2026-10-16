@@ -4,14 +4,14 @@
   const $$ = (selector, root = document) => [...root.querySelectorAll(selector)];
   const money = value => new Intl.NumberFormat('en-US', {style:'currency', currency:'USD'}).format(value);
   const products = [
-    {id:'film-kodak-gold',name:'Gold 200 · 35mm Film',category:'film',price:12.99,tag:'Everyday color',description:'A warm, versatile color negative film for sunlit streets, portraits, and everyday moments.',image:'product-01.jpg'},
+    {id:'film-color-200',name:'Color 200 · 35mm Film',category:'film',price:12.99,tag:'Everyday color',description:'A versatile color-negative film for daylight walks, portraits, and everyday moments.',image:'product-01.jpg'},
     {id:'film-color-400',name:'Color 400 · 35mm Film',category:'film',price:14.99,tag:'All-round favorite',description:'A flexible 400-speed color film for changing light and spontaneous frames.',image:'product-02.jpg'},
-    {id:'camera-classic-slr',name:'Classic SLR Camera',category:'cameras',price:329,tag:'Collector pick',description:'A classic manual-focus 35mm SLR concept for a deliberate shooting experience.',image:'product-03.jpg'},
-    {id:'camera-fm-style',name:'Mechanical 35mm SLR',category:'cameras',price:449,tag:'Manual control',description:'A timeless mechanical-camera-inspired body with tactile controls.',image:'product-04.jpg'},
-    {id:'lens-prime-50',name:'50mm Prime Lens',category:'lenses',price:189,tag:'Everyday lens',description:'A versatile normal focal-length lens concept for portraits and daily photography.',image:'product-05.jpg'},
-    {id:'bag-canvas',name:'Canvas Camera Bag',category:'bags',price:89,tag:'Carry in style',description:'A heritage-inspired shoulder bag concept for a camera and small essentials.',image:'product-06.jpg'},
-    {id:'tripod-travel',name:'Compact Travel Tripod',category:'accessories',price:119,tag:'Steady frames',description:'A compact tripod concept for long exposures and careful composition.',image:'product-07.jpg'},
-    {id:'darkroom-tank',name:'Film Developing Tank',category:'darkroom',price:39,tag:'Darkroom essential',description:'A developing-tank concept for photographers exploring home film processing.',image:'product-08.jpg'}
+    {id:'camera-classic-slr',name:'Classic 35mm SLR',category:'cameras',price:149.00,tag:'Vintage body',description:'A vintage manual-focus SLR concept. Check shutter, meter, seals, and condition before buying.',image:'product-03.jpg'},
+    {id:'camera-mechanical-slr',name:'Mechanical 35mm SLR',category:'cameras',price:189.00,tag:'Manual control',description:'A classic manual camera concept with tactile controls. Final price depends on tested condition.',image:'product-04.jpg'},
+    {id:'lens-prime-50',name:'Manual 50mm Prime Lens',category:'lenses',price:79.00,tag:'Everyday lens',description:'A versatile manual prime lens concept. Confirm mount compatibility before purchase.',image:'product-05.jpg'},
+    {id:'bag-canvas',name:'Canvas Camera Messenger',category:'bags',price:64.00,tag:'Carry in style',description:'A heritage-inspired canvas bag concept with leather-look trim and space for everyday gear.',image:'product-06.jpg'},
+    {id:'tripod-travel',name:'Compact Travel Tripod',category:'accessories',price:39.00,tag:'Steady frames',description:'A compact tripod concept for steady framing and long exposures with lightweight gear.',image:'product-07.jpg'},
+    {id:'darkroom-tank',name:'35mm Film Developing Tank',category:'darkroom',price:34.00,tag:'Darkroom essential',description:'A film developing tank concept with reel. Check reel format and capacity before purchase.',image:'product-08.jpg'}
   ];
   let activeFilter = 'all';
   let cart = {};

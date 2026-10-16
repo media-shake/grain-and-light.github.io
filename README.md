@@ -1,13 +1,13 @@
-# GRAIN & LIGHT — V3
+# GRAIN & LIGHT — V4
 ### Analog Photography Supply · Film Essentials · Thoughtful Accessories
 
 **GRAIN & LIGHT** is a premium storefront concept for people who love the tactile ritual of analog photography. Inspired by film grain, natural light, classic camera design, and slow creative practice, this responsive static website presents a curated selection of film, cameras, lenses, bags, and darkroom essentials.
 
 > Make room for the moment.
 
-## V3 — Product Image Framing Refinement
+## V4 — Individual Product Photography & Pricing
 
-This version further refines the product imagery after visual review. Each product photo is cropped around its own subject to reduce empty margins, sharpened gently, and saved as an individual square image. Product cards use a neutral image field without blend-mode washout, and collection cards use a stronger, more balanced overlay so both the product and typography remain readable. The hero camera photograph has also been reframed to emphasize the equipment.
+This version replaces repeated crops from a single composite with eight individually generated product photographs: two distinct film products, two different vintage SLR cameras, a prime lens, a canvas camera bag, a compact tripod, and a film developing tank. Every product card maps to its own dedicated image file. Demo prices were adjusted to more plausible sample retail ranges; they are illustrative estimates, not live quotes, verified stock, or offers for specific tested items.
 
 ## Highlights
 
