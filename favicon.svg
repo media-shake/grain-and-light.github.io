@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 560 100" role="img" aria-labelledby="title desc">
+<title id="title">GRAIN &amp; LIGHT</title><desc id="desc">Analog photography supply</desc>
+<g transform="translate(8 9)">
+<circle cx="40" cy="40" r="36" fill="#151515" stroke="#e95b2b" stroke-width="2"/>
+<path d="M40 9 A31 31 0 0 1 67 25 L49 33Z" fill="#f4a43a"/><path d="M69 30 A31 31 0 0 1 65 58 L49 47Z" fill="#e95b2b"/>
+<path d="M60 63 A31 31 0 0 1 31 70 L39 51Z" fill="#f3ead9"/><path d="M25 67 A31 31 0 0 1 11 40 L32 42Z" fill="#e8ded0"/>
+<path d="M11 33 A31 31 0 0 1 31 11 L36 31Z" fill="#fff8ed"/>
+<circle cx="40" cy="40" r="12" fill="#151515" stroke="#fff8ed" stroke-width="2"/>
+</g>
+<text x="96" y="51" font-family="Georgia,serif" font-size="39" font-weight="bold" letter-spacing="-1.2" fill="#f7f0e5">GRAIN <tspan fill="#e95b2b">&amp;</tspan> LIGHT</text>
+<text x="99" y="77" font-family="Arial,sans-serif" font-size="12" letter-spacing="4.2" fill="#c8bca9">ANALOG PHOTOGRAPHY SUPPLY</text></svg>
