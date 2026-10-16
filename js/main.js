@@ -4,15 +4,87 @@
   const $$ = (selector, root = document) => [...root.querySelectorAll(selector)];
   const money = value => new Intl.NumberFormat('en-US', {style:'currency', currency:'USD'}).format(value);
   const products = [
-    {id:'film-color-200',name:'Color 200 · 35mm Film',category:'film',price:12.99,tag:'Everyday color',description:'A versatile color-negative film for daylight walks, portraits, and everyday moments.',image:'product-01.jpg'},
-    {id:'film-color-400',name:'Color 400 · 35mm Film',category:'film',price:14.99,tag:'All-round favorite',description:'A flexible 400-speed color film for changing light and spontaneous frames.',image:'product-02.jpg'},
-    {id:'camera-classic-slr',name:'Classic 35mm SLR',category:'cameras',price:149.00,tag:'Vintage body',description:'A vintage manual-focus SLR concept. Check shutter, meter, seals, and condition before buying.',image:'product-03.jpg'},
-    {id:'camera-mechanical-slr',name:'Mechanical 35mm SLR',category:'cameras',price:189.00,tag:'Manual control',description:'A classic manual camera concept with tactile controls. Final price depends on tested condition.',image:'product-04.jpg'},
-    {id:'lens-prime-50',name:'Manual 50mm Prime Lens',category:'lenses',price:79.00,tag:'Everyday lens',description:'A versatile manual prime lens concept. Confirm mount compatibility before purchase.',image:'product-05.jpg'},
-    {id:'bag-canvas',name:'Canvas Camera Messenger',category:'bags',price:64.00,tag:'Carry in style',description:'A heritage-inspired canvas bag concept with leather-look trim and space for everyday gear.',image:'product-06.jpg'},
-    {id:'tripod-travel',name:'Compact Travel Tripod',category:'accessories',price:39.00,tag:'Steady frames',description:'A compact tripod concept for steady framing and long exposures with lightweight gear.',image:'product-07.jpg'},
-    {id:'darkroom-tank',name:'35mm Film Developing Tank',category:'darkroom',price:34.00,tag:'Darkroom essential',description:'A film developing tank concept with reel. Check reel format and capacity before purchase.',image:'product-08.jpg'}
-  ];
+    {
+        "id": "film-color-200",
+        "name": "Color 200 · 35mm Film",
+        "category": "film",
+        "price": 12.99,
+        "tag": "Everyday color",
+        "description": "A versatile color-negative film for daylight walks, portraits, and everyday moments.",
+        "image": "product-01.jpg",
+        "brand": "GRAIN & LIGHT EDIT"
+    },
+    {
+        "id": "film-color-400",
+        "name": "Color 400 · 35mm Film",
+        "category": "film",
+        "price": 14.99,
+        "tag": "All-round favorite",
+        "description": "A flexible 400-speed color film for changing light and spontaneous frames.",
+        "image": "product-02.jpg",
+        "brand": "GRAIN & LIGHT EDIT"
+    },
+    {
+        "id": "camera-classic-slr",
+        "name": "Classic 35mm SLR",
+        "category": "cameras",
+        "price": 149.0,
+        "tag": "Vintage body",
+        "description": "A vintage manual-focus SLR listing concept. Condition and operation must be verified before sale.",
+        "image": "product-03.jpg",
+        "brand": "CLASSIC CAMERAS"
+    },
+    {
+        "id": "camera-mechanical-slr",
+        "name": "Mechanical 35mm SLR",
+        "category": "cameras",
+        "price": 189.0,
+        "tag": "Manual control",
+        "description": "A classic manual camera concept. Final price depends on tested condition and included accessories.",
+        "image": "product-04.jpg",
+        "brand": "CLASSIC CAMERAS"
+    },
+    {
+        "id": "lens-prime-50",
+        "name": "Manual 50mm Prime Lens",
+        "category": "lenses",
+        "price": 79.0,
+        "tag": "Everyday lens",
+        "description": "A versatile manual prime lens concept for portraits and everyday photography. Check mount compatibility.",
+        "image": "product-05.jpg",
+        "brand": "OPTICS"
+    },
+    {
+        "id": "bag-canvas",
+        "name": "Canvas Camera Messenger",
+        "category": "bags",
+        "price": 64.0,
+        "tag": "Carry in style",
+        "description": "A heritage-inspired canvas shoulder bag concept for a camera and everyday essentials.",
+        "image": "product-06.jpg",
+        "brand": "FIELD CARRY"
+    },
+    {
+        "id": "tripod-travel",
+        "name": "Compact Travel Tripod",
+        "category": "accessories",
+        "price": 39.0,
+        "tag": "Steady frames",
+        "description": "A lightweight tripod concept for steady framing and long exposures with compatible gear.",
+        "image": "product-07.jpg",
+        "brand": "FIELD TOOLS"
+    },
+    {
+        "id": "darkroom-tank",
+        "name": "35mm Film Developing Tank",
+        "category": "darkroom",
+        "price": 34.0,
+        "tag": "Darkroom essential",
+        "description": "A developing-tank concept for home film processing. Confirm reel format and capacity.",
+        "image": "product-08.jpg",
+        "brand": "DARKROOM"
+    }
+];
   let activeFilter = 'all';
   let cart = {};
   try { cart = JSON.parse(localStorage.getItem('gl-cart') || '{}') || {}; } catch (_) { cart = {}; }
@@ -36,7 +108,7 @@
     const list = filteredProducts();
     grid.innerHTML = list.map(p => `<article class="product-card">
       <div class="product-image-wrap"><img src="assets/images/products/${p.image}" alt="${p.name}" loading="lazy"><span class="product-tag">${p.tag}</span><button class="quick-add" data-add="${p.id}" aria-label="Add ${p.name} to bag">Add to bag +</button></div>
-      <div class="product-meta"><span class="product-category">${p.category}</span><h3 class="product-name">${p.name}</h3><p class="product-description">${p.description}</p><div class="product-price-row"><span class="product-price">${money(p.price)}</span><button class="product-details" data-details="${p.id}">Details</button></div></div>
+      <div class="product-meta"><span class="product-category">${p.category} · ${p.brand || 'GRAIN & LIGHT'}</span><h3 class="product-name">${p.name}</h3><p class="product-description">${p.description}</p><div class="product-price-row"><span class="product-price">${money(p.price)}</span><button class="product-details" data-details="${p.id}">Details</button></div></div>
     </article>`).join('');
     $('#emptyState').hidden = list.length > 0;
     count.textContent = `${list.length} ${list.length === 1 ? 'piece' : 'considered essentials'}`;

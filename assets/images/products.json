@@ -1,12 +1,13 @@
 [
   {
-    "id": "film-kodak-gold",
-    "name": "Gold 200 \u00b7 35mm Film",
+    "id": "film-color-200",
+    "name": "Color 200 \u00b7 35mm Film",
     "category": "film",
     "price": 12.99,
     "tag": "Everyday color",
-    "description": "A warm, versatile color negative film for sunlit streets, portraits, and everyday moments.",
-    "image": "product-01.jpg"
+    "description": "A versatile color-negative film for daylight walks, portraits, and everyday moments.",
+    "image": "product-01.jpg",
+    "brand": "GRAIN & LIGHT EDIT"
   },
   {
     "id": "film-color-400",
@@ -15,60 +16,67 @@
     "price": 14.99,
     "tag": "All-round favorite",
     "description": "A flexible 400-speed color film for changing light and spontaneous frames.",
-    "image": "product-02.jpg"
+    "image": "product-02.jpg",
+    "brand": "GRAIN & LIGHT EDIT"
   },
   {
     "id": "camera-classic-slr",
-    "name": "Classic SLR Camera",
+    "name": "Classic 35mm SLR",
     "category": "cameras",
-    "price": 329.0,
-    "tag": "Collector pick",
-    "description": "A classic manual-focus 35mm SLR concept for photographers who enjoy a deliberate shooting experience.",
-    "image": "product-03.jpg"
+    "price": 149.0,
+    "tag": "Vintage body",
+    "description": "A vintage manual-focus SLR listing concept. Condition and operation must be verified before sale.",
+    "image": "product-03.jpg",
+    "brand": "CLASSIC CAMERAS"
   },
   {
-    "id": "camera-fm-style",
+    "id": "camera-mechanical-slr",
     "name": "Mechanical 35mm SLR",
     "category": "cameras",
-    "price": 449.0,
+    "price": 189.0,
     "tag": "Manual control",
-    "description": "A timeless mechanical-camera-inspired body with tactile controls and a bright viewfinder aesthetic.",
-    "image": "product-04.jpg"
+    "description": "A classic manual camera concept. Final price depends on tested condition and included accessories.",
+    "image": "product-04.jpg",
+    "brand": "CLASSIC CAMERAS"
   },
   {
     "id": "lens-prime-50",
-    "name": "50mm Prime Lens",
+    "name": "Manual 50mm Prime Lens",
     "category": "lenses",
-    "price": 189.0,
+    "price": 79.0,
     "tag": "Everyday lens",
-    "description": "A versatile normal focal-length lens concept for portraits, details, and daily photography.",
-    "image": "product-05.jpg"
+    "description": "A versatile manual prime lens concept for portraits and everyday photography. Check mount compatibility.",
+    "image": "product-05.jpg",
+    "brand": "OPTICS"
   },
   {
     "id": "bag-canvas",
-    "name": "Canvas Camera Bag",
+    "name": "Canvas Camera Messenger",
     "category": "bags",
-    "price": 89.0,
+    "price": 64.0,
     "tag": "Carry in style",
-    "description": "A heritage-inspired shoulder bag concept with room for a camera and small essentials.",
-    "image": "product-06.jpg"
+    "description": "A heritage-inspired canvas shoulder bag concept for a camera and everyday essentials.",
+    "image": "product-06.jpg",
+    "brand": "FIELD CARRY"
   },
   {
     "id": "tripod-travel",
     "name": "Compact Travel Tripod",
     "category": "accessories",
-    "price": 119.0,
+    "price": 39.0,
     "tag": "Steady frames",
-    "description": "A compact tripod concept for long exposures, landscapes, and careful composition.",
-    "image": "product-07.jpg"
+    "description": "A lightweight tripod concept for steady framing and long exposures with compatible gear.",
+    "image": "product-07.jpg",
+    "brand": "FIELD TOOLS"
   },
   {
     "id": "darkroom-tank",
-    "name": "Film Developing Tank",
+    "name": "35mm Film Developing Tank",
     "category": "darkroom",
-    "price": 39.0,
+    "price": 34.0,
     "tag": "Darkroom essential",
-    "description": "A practical developing-tank concept for photographers exploring home film processing.",
-    "image": "product-08.jpg"
+    "description": "A developing-tank concept for home film processing. Confirm reel format and capacity.",
+    "image": "product-08.jpg",
+    "brand": "DARKROOM"
   }
 ]
